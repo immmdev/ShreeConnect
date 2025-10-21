@@ -16,6 +16,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import AI from "./pages/AI";
 import ChatbotIcon from "./pages/ChatbotUI";
+import ProductDetails from "./pages/ProductDetails";
 function App() {
   return (
     <>
@@ -23,6 +24,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path="/marketplace" element={<Marketplace/>}/>
+      <Route path="/marketplace/:id" element={<ProductDetails/>}/>
       <Route path="/learning-awareness" element={<LearningAndAwareness/>}/>
       <Route path="/about-us" element={<AboutUs/>}/>
       <Route path="/analytics-dashboard" element={<AnalyticsDashboard/>}/>
