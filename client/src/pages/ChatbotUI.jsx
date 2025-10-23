@@ -39,11 +39,11 @@ const ChatbotIcon = () => {
       {/* Chat Header */}
       <div className={`p-3 flex items-center justify-between ${primaryAccent} text-white rounded-t-lg shadow-md`}>
         <div className="flex items-center gap-2">
-            <Bot className="w-6 h-6 text-[#FFFDA1]"/>
-            <span className="font-bold text-lg text-[#FFFDA1]">ShreeBot AI</span>
+            <Bot className="w-6 h-6 text-[#013220]"/>
+            <span className="font-bold text-lg text-[#013220] ">ShreeBot AI</span>
         </div>
         <button onClick={handleToggle} className="text-[#FFFDA1] hover:text-white p-1 rounded-full hover:bg-black/10">
-          <X className="w-5 h-5" />
+          <X className="w-5 h-5  text-[#013220]" />
         </button>
       </div>
 
@@ -52,7 +52,7 @@ const ChatbotIcon = () => {
         {/* Mock Bot Message */}
         <div className="flex justify-start">
           <div className="max-w-[80%] p-3 rounded-lg rounded-bl-none bg-[#B3CF8C] shadow-sm text-sm">
-            Hello! I'm ShreeBot, your **Multilingual AI Assistant**. Ask me about schemes, crop guidance, or price trends!
+            Hello! I'm ShreeBot, your Multilingual AI Assistant. Ask me about schemes, crop guidance, or price trends!
           </div>
         </div>
         {/* Mock User Message */}
@@ -64,7 +64,7 @@ const ChatbotIcon = () => {
         {/* Mock Bot Message */}
         <div className="flex justify-start">
           <div className="max-w-[80%] p-3 rounded-lg rounded-bl-none bg-[#B3CF8C] shadow-sm text-sm">
-            The predicted wholesale price for Ragi (Finger Millet) in Pune is **₹36.50/kg**. This is based on current demand and regional data.
+            The predicted wholesale price for Ragi (Finger Millet) in Pune is ₹36.50/kg. This is based on current demand and regional data.
           </div>
         </div>
       </div>

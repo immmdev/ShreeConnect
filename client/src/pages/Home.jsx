@@ -89,7 +89,7 @@ const Home = () => {
                   <ShoppingCart className="w-6 h-6 mr-3" />
                   Start Trading Millets Now
                 </a>
-                <a href="/chatbot" className={secondaryButtonClass}>
+                <a href="/ai" className={secondaryButtonClass}>
                   <MessageCircle className="w-6 h-6 mr-3" />
                   Ask the AI Assistant (Voice-Enabled)
                 </a>
@@ -142,12 +142,12 @@ const Home = () => {
         <section>
           <div className="bg-[#B3CF8C] p-8 md:p-16 rounded-[2rem] shadow-2xl border-4 border-[#547C3E] flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2 text-center lg:text-left">
-              <Leaf className="w-16 h-16 text-[#013220] flex-shrink-0 p-3 bg-[#FFFDA1] rounded-full shadow-lg mb-6 mx-auto lg:mx-0" />
+              {/* <Leaf className="w-16 h-16 text-[#013220] flex-shrink-0 p-3 bg-[#FFFDA1] rounded-full shadow-lg mb-6 mx-auto lg:mx-0" /> */}
               <h2 className="text-3xl sm:text-4xl font-extrabold text-[#013220] mb-4">
                 Cultivating Change: ShreeConnect's Expected Impact
               </h2>
               <p className="text-xl text-[#013220]/90 leading-relaxed">
-                Our mission is to empower rural economies, improve nutritional security, and foster **technological adoption** among farmers and SHGs, creating a sustainable, future-ready agricultural sector.
+                Our mission is to empower rural economies, improve nutritional security, and foster technological adoption among farmers and SHGs, creating a sustainable, future-ready agricultural sector.
               </p>
             </div>
 

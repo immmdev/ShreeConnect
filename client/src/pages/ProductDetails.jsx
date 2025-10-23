@@ -64,7 +64,7 @@ const ProductDetails = () => {
                     <div className={`rounded-xl p-4 ${accentBackground}`}>
                         <p className="text-lg font-bold mb-2">Seller Details</p>
                         <p><User className={`inline w-4 h-4 mr-2 ${primaryAccent}`} /> {product.sellerType}</p>
-                        {product.brandName && <p>Brand: {product.brandName}</p>}
+                        {/* {product.brandName && <p>Brand: {product.brandName}</p>} */}
                         <p>Journey of product: <a href='/jorney' className="text-blue-600 underline">My journey</a></p>
                         <p>Contact: <a href={`mailto:${product.sellerContact}`} className="text-blue-600 underline">{product.sellerContact}</a></p>
                     </div>
@@ -72,7 +72,7 @@ const ProductDetails = () => {
 
                 <div className="mt-8 p-6 bg-[#FFFDA1]/50 rounded-xl">
                     <h3 className={`text-xl font-bold mb-2 ${primaryText}`}>Nutritional Info</h3>
-                    <p className={`${primaryAccent}`}>{product.nutrinationalInfo}</p>
+                    <p className={`${primaryAccent}`}>{product.nutritionalInfo}</p>
                 </div>
                 <div className='flex gap-4'>
                 <button className="mt-8 w-full py-4 bg-[#547C3E] text-white font-bold rounded-xl hover:bg-[#013220] transition-colors duration-300 shadow-lg">

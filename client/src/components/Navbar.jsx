@@ -11,11 +11,10 @@ import { Menu, X, Leaf, ShoppingCart, LayoutDashboard, MessageCircle, BookOpen, 
 const navItems = [
   { name: 'Home', href: '/', icon: Home, isActive: true }, // Mocked active state for example
   { name: 'Marketplace', href: '/marketplace', icon: ShoppingCart },
-  
-  { name: 'Dashboard', href: '/analytics-dashboard', icon: LayoutDashboard },
   { name: 'Communities', href: '/community', icon: MessageCircle },
   { name: 'Learning Hub', href: '/learning-awareness', icon: BookOpen },
   { name: 'Policy & Schemes', href: '/schemes-policies', icon: Users },
+  { name: 'Dashboard', href: '/analytics-dashboard', icon: LayoutDashboard },
 ];
 
 const Navbar = () => {
