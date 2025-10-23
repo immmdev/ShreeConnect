@@ -21,9 +21,9 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center mb-4">
               {/* Using the Primary Green for the logo leaf */}
-              <Leaf className="w-8 h-8 text-[#547C3E]" />
+              {/* <Leaf className="w-8 h-8 text-[#547C3E]" /> */}
               <span className="ml-2 text-2xl font-extrabold tracking-tight">
-                ShreeConnect
+                श्रीConnect
               </span>
             </div>
             <p className="text-sm text-[#B3CF8C] leading-relaxed">

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" width="220" height="220">
+  <defs>
+    <!-- Gold gradient -->
+    <linearGradient id="gold" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#FFD76B"/>
+      <stop offset="0.6" stop-color="#FFC34A"/>
+      <stop offset="1" stop-color="#E0A800"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Large Shri text in gold -->
+  <text x="50%" y="62%" text-anchor="middle" dominant-baseline="middle"
+        font-family="Noto Serif Devanagari, Noto Sans Devanagari, Mangal, serif"
+        font-size="130" font-weight="800" fill="url(#gold)">
+    श्री
+  </text>
+</svg>

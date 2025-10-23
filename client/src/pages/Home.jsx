@@ -39,10 +39,10 @@ const corePillars = [
 
 // Mock Data for Impact Metrics
 const impactMetrics = [
-    { value: '40%+', label: 'Expected Farmer Income Increase' },
-    { value: '100%', label: 'Product Traceability' },
-    { value: '7+', label: 'Regional Languages Supported' },
-    { value: '5K+', label: 'Metric Tons Traded (Projected)' }
+  { value: '40%+', label: 'Expected Farmer Income Increase' },
+  { value: '100%', label: 'Product Traceability' },
+  { value: '7+', label: 'Regional Languages Supported' },
+  { value: '5K+', label: 'Metric Tons Traded (Projected)' }
 ];
 
 // Mock Data for Top Stories (Keep existing)
@@ -59,18 +59,18 @@ const Home = () => {
 
   // Primary CTA Button Style
   const primaryButtonClass = "flex items-center justify-center px-8 py-4 text-xl font-bold text-white bg-[#547C3E] rounded-xl transition-all duration-300 shadow-xl hover:bg-[#013220] hover:shadow-2xl transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-[#B3CF8C]";
-  
+
   // Secondary CTA Button Style
   const secondaryButtonClass = "flex items-center justify-center px-8 py-4 text-xl font-bold text-[#013220] border-2 border-[#547C3E] bg-[#FFFDA1] rounded-xl transition-all duration-300 shadow-md hover:bg-[#B3CF8C] hover:border-[#013220] transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-[#547C3E]";
 
   return (
     <div className="min-h-screen bg-[#FFFDA1]">
-      
+
       {/* 1. HERO SECTION: The Intelligent Marketplace */}
       <section className="bg-[#FFFDA1] pt-12 md:pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-12 lg:gap-12 items-center">
-            
+
             {/* Content Area */}
             <div className="lg:col-span-6 xl:col-span-7 text-center lg:text-left">
               <p className="text-sm font-bold text-[#547C3E] uppercase tracking-widest mb-4">
@@ -97,40 +97,25 @@ const Home = () => {
             </div>
 
             {/* Image/Illustration Area (Placeholder) */}
-            <div className="lg:col-span-6 xl:col-span-5 mt-12 lg:mt-0 relative">
-              <div className="relative p-10 bg-[#B3CF8C] rounded-[3rem] shadow-2xl border-4 border-[#547C3E] transform transition duration-500 hover:rotate-1 hover:scale-[1.01] max-w-md mx-auto">
-                <div className="w-full h-80 bg-white rounded-2xl flex flex-col items-center justify-center p-6 border-dashed border-2 border-[#547C3E]">
-                  <Leaf className="w-12 h-12 text-[#547C3E] mb-4"/>
-                  <p className="text-[#013220] font-bold text-lg text-center">
-                    [Placeholder: IoT Farm Sensor & Digital Supply Chain Map]
-                  </p>
-                  <p className="text-sm text-gray-600 mt-2">
-                    Visualizing the transparent connection between farmer and consumer.
-                  </p>
-                </div>
-                {/* Network effect */}
-                <div className="absolute inset-0 rounded-[3rem] opacity-30 pointer-events-none">
-                  <div className="w-full h-full bg-[radial-gradient(#013220_1px,transparent_1px)] [background-size:30px_30px] rounded-[3rem]"></div>
-                </div>
-              </div>
+            <div className="lg:col-span-6 xl:col-span-5 mt-12 lg:mt-0 relative mx-auto">
+              <img className='relative h-80 w-140 bg-[#B3CF8C] rounded-[3rem] shadow-2xl border-4 border-[#547C3E] transform transition duration-500 hover:rotate-1 hover:scale-[1.01] ' src='/hero.png' alt='farmer->shg->consumer->startup'></img>
             </div>
           </div>
         </div>
       </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 space-y-28">
-        
         {/* 2. THE THREE CORE PILLARS SECTION */}
         <section>
           <div className="text-center">
             <h2 className={sectionTitleClass}>Building the Future of Agri-Trade</h2>
             <p className={sectionSubtitleClass}>Our Solution: Three Pillars of the ShreeConnect Architecture</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
             {corePillars.map(pillar => (
-              <div 
-                key={pillar.title} 
+              <div
+                key={pillar.title}
                 className={`${pillar.color} ${pillar.textColor} p-8 rounded-3xl shadow-xl transition-all duration-300 transform hover:shadow-2xl hover:-translate-y-2 border-b-8 border-[#013220]/20`}
               >
                 <div className={`p-4 inline-block rounded-full bg-[#013220] text-white mb-6 shadow-xl`}>
@@ -140,7 +125,7 @@ const Home = () => {
                 <p className={`text-base leading-relaxed ${pillar.textColor === 'text-white' ? 'text-white/90' : 'text-[#013220]/80'} mb-6`}>
                   {pillar.description}
                 </p>
-                
+
                 <h4 className="text-sm font-semibold mb-2 uppercase tracking-wider opacity-80">Key Features:</h4>
                 <ul className="list-disc ml-5 space-y-1 text-sm font-medium">
                   {pillar.features.map(feature => (
@@ -152,7 +137,7 @@ const Home = () => {
           </div>
         </section>
 
-        
+
         {/* 3. MISSION & IMPACT METRICS */}
         <section>
           <div className="bg-[#B3CF8C] p-8 md:p-16 rounded-[2rem] shadow-2xl border-4 border-[#547C3E] flex flex-col lg:flex-row items-center gap-12">
@@ -165,7 +150,7 @@ const Home = () => {
                 Our mission is to empower rural economies, improve nutritional security, and foster **technological adoption** among farmers and SHGs, creating a sustainable, future-ready agricultural sector.
               </p>
             </div>
-            
+
             {/* Metric Cards */}
             <div className="lg:w-1/2 grid grid-cols-2 gap-4">
               {impactMetrics.map((metric) => (
@@ -185,12 +170,12 @@ const Home = () => {
             <h2 className={sectionTitleClass}>Latest from the Farm & Hub</h2>
             <p className={sectionSubtitleClass}>Knowledge, Policy, and Market Intelligence</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             {mockStories.map(story => (
-              <a 
-                key={story.id} 
-                href="#" 
+              <a
+                key={story.id}
+                href="#"
                 className="bg-white p-6 rounded-2xl shadow-xl border-l-8 border-[#B3CF8C] hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group"
               >
                 <Newspaper className="w-8 h-8 text-[#547C3E] mb-4" />

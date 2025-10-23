@@ -40,9 +40,9 @@ const Navbar = () => {
           
           {/* Logo & Brand Name */}
           <div className="flex-shrink-0 flex items-center">
-            <Leaf className="w-9 h-9 text-[#547C3E] shadow-sm" />
-            <span className="ml-3 text-3xl font-extrabold tracking-tight text-[#013220] cursor-pointer">
-              ShreeConnect
+            {/* <Leaf className="w-9 h-9 text-[#547C3E] shadow-sm" /> */}
+            <span style={{fontFamily:"revert-layer"}} className="ml-3 text-3xl font-extrabold tracking-tight text-[#013220] cursor-pointer">
+             श्रीConnect
             </span>
           </div>
 
