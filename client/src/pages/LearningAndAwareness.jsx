@@ -152,7 +152,7 @@ const StoryCard = ({ story }) => {
                 </p>
                 
                 <div className="bg-[#FFFDA1] border-l-4 border-[#547C3E] p-6 rounded-lg mt-8">
-                  <h3 className="text-lg font-bold text-[#013220] mb-2">📌 Action Steps</h3>
+                  <h3 className="text-lg font-bold text-[#013220] mb-2"> Action Steps</h3>
                   <p className="text-sm text-[#013220]/80">
                     Connect with your local agricultural office, attend upcoming workshops, and join ShreeConnect community forums to stay updated on implementation details and support programs.
                   </p>

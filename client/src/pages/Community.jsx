@@ -259,10 +259,10 @@ const Community = () => {
                 {/* Header */}
                 <header className="text-center mb-12">
                     <h1 className="text-4xl md:text-5xl font-extrabold text-[#013220] leading-tight mb-4">
-                        ShreeConnect <span className="text-[#547C3E]">Community Hub</span>
+                        ShreeConnect Community Hub
                     </h1>
                     <p className="text-lg text-[#013220]/80 max-w-3xl mx-auto">
-                        Connect, collaborate, and grow with verified **Farmers, SHGs, FPOs, and Startups** across the millet ecosystem.
+                        Connect, collaborate, and grow with verified Farmers, SHGs, FPOs, and Startups across the millet ecosystem.
                     </p>
                 </header>
 
@@ -277,7 +277,7 @@ const Community = () => {
                 </div>
 
                 {/* Search and Filter Bar */}
-                <div className="mb-10 flex flex-col md:flex-row gap-4 p-4 bg-white rounded-xl shadow-lg border border-[#B3CF8C]">
+                <div className="mb-10 flex flex-col md:flex-row gap-4 p-4 bg-white rounded-xl shadow-lg border-2 border-[#B3CF8C]">
                     <div className="flex-1 relative">
                         <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-[#547C3E]" />
                         <input
@@ -285,17 +285,17 @@ const Community = () => {
                             placeholder="Search posts, tags, or users..."
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
-                            className="w-full pl-12 pr-4 py-3 text-[#013220] bg-[#FFFDA1] rounded-lg border border-[#B3CF8C] focus:outline-none focus:ring-2 focus:ring-[#547C3E] transition-all duration-300"
+                            className="w-full pl-12 pr-4 py-3 text-[#013220] rounded-lg border-2 border-[#B3CF8C] focus:outline-none focus:ring-4 focus:ring-[#547C3E] transition-all duration-300"
                         />
                     </div>
                     <select
                         value={sortBy}
                         onChange={(e) => setSortBy(e.target.value)}
-                        className="px-6 py-3 bg-[#FFFDA1] text-[#013220] font-semibold rounded-lg border border-[#B3CF8C] focus:outline-none focus:ring-2 focus:ring-[#547C3E] transition-all cursor-pointer md:w-auto"
+                        className="px-6 py-3 text-[#013220] font-semibold rounded-lg border-2 border-[#B3CF8C] focus:outline-none focus:ring-2 focus:ring-[#547C3E] transition-all cursor-pointer md:w-auto"
                     >
-                        <option value="trending">🔥 Trending First</option>
-                        <option value="recent">⏱️ Most Recent</option>
-                        <option value="popular">👍 Most Popular</option>
+                        <option value="trending">Trending First</option>
+                        <option value="recent">Most Recent</option>
+                        <option value="popular">Most Popular</option>
                     </select>
                 </div>
 
@@ -359,7 +359,7 @@ const Community = () => {
                     )}
                 </div>
 
-                {/* Community Guidelines CTA */}
+                {/* Community Guidelines CTA
                 <div className="mt-16 p-8 bg-gradient-to-r from-[#B3CF8C] to-[#547C3E] rounded-2xl shadow-xl text-white">
                     <div className="flex items-center justify-between flex-wrap gap-4">
                         <div>
@@ -370,7 +370,7 @@ const Community = () => {
                             View Guidelines
                         </button>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );
